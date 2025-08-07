@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta name="keywords" content="東京,飯田橋,社会保険労務士事務所,人事労務の専門,中央労務管理協会,齊藤社会保険労務士事務所,お問い合わせ,無料相談,文京区">
+    <meta name="description" content="齊藤社会保険労務士事務所へのお問い合わせ。人事労務に関するご相談は無料です。お気軽にご連絡ください。">
+    
+    <title>お問い合わせ・無料相談 | 齊藤社会保険労務士事務所</title>
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Custom CSS Variables */
+        :root {
+            --primary: #1a365d;
+            --primary-light: #2c5aa0;
+            --secondary: #3182ce;
+            --accent: #e53e3e;
+            --accent-gold: #d69e2e;
+            --success: #38a169;
+            --warning: #dd6b20;
+            --danger: #e53e3e;
+            
+            --light: #f7fafc;
+            --lighter: #ffffff;
+            --dark: #1a202c;
+            --darker: #2d3748;
+            
+            --text: #2d3748;
+            --text-light: #4a5568;
+            --text-lighter: #718096;
+            --text-muted: #a0aec0;
+            
+            --font-primary: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-secondary: 'Playfair Display', serif;
+            
+            --transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            --transition-fast: all 0.2s ease;
+            --transition-slow: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+            
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.12);
+            --shadow-xl: 0 25px 50px rgba(0, 0, 0, 0.16);
+            
+            --border-radius-sm: 8px;
+            --border-radius: 12px;
+            --border-radius-lg: 20px;
+            --border-radius-xl: 24px;
+            
+            --container-max: 1400px;
+            --container-padding: 2rem;
+        }
+
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.7;
+            color: var(--text);
+            background-color: var(--lighter);
+            overflow-x: hidden;
+            font-size: 16px;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        ::selection {
+            background: var(--secondary);
+            color: white;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-secondary);
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--primary);
+            font-feature-settings: "lnum" 1;
+            vertical-align: baseline;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        h1 { 
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 800;
+        }
+        h2 { 
+            font-size: clamp(2.2rem, 4vw, 3.5rem);
+            font-weight: 700;
+        }
+        h3 { 
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            font-weight: 600;
+        }
+        h4 { 
+            font-size: clamp(1.5rem, 2.5vw, 2rem);
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 1.125rem;
+            line-height: 1.75;
+            color: var(--text);
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+            letter-spacing: 0.01em;
+        }
+
+        a {
+            color: var(--secondary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--accent);
+        }
+
+        /* Utility Classes */
+        .container {
+            width: 100%;
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 var(--container-padding);
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Button Styles */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.875rem 2rem;
+            background: var(--secondary);
+            color: white;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.6s;
+            z-index: -1;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            color: white;
+        }
+
+        .btn-lg {
+            padding: 1.25rem 2.5rem;
+            font-size: 1.125rem;
+        }
+
+        .btn-gold {
+            background: linear-gradient(135deg, var(--accent-gold), #f6e05e);
+            color: var(--primary);
+        }
+
+        .btn-gold:hover {
+            background: linear-gradient(135deg, #f6e05e, var(--accent-gold));
+            color: var(--dark);
+        }
+
+        /* Layout Components */
+        .section {
+            padding: 6rem 0;
+            position: relative;
+        }
+
+        .section-alt {
+            background: var(--light);
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 4rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .section-heading h2 {
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+            text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+            font-weight: 700;
+        }
+
+        .section-heading h2::after {
+            content: '';
+            position: absolute;
+            bottom: -0.75rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--secondary), var(--accent-gold));
+            border-radius: 2px;
+        }
+
+        .section-heading p {
+            max-width: 700px;
+            margin: 0 auto;
+            color: var(--text-light);
+            font-size: 1.125rem;
+            text-shadow: 0 1px 3px rgba(255, 255, 255, 0.7);
+            font-weight: 500;
+        }
+
+        /* Header & Navigation */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: var(--shadow);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: var(--transition);
+        }
+
+        .header.scrolled {
+            padding: 0.75rem 0;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: var(--transition);
+        }
+
+        .logo:hover {
+            transform: scale(1.02);
+        }
+
+        .logo img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent-gold);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .logo img:hover {
+            box-shadow: var(--shadow-lg);
+            transform: scale(1.05);
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-title {
+            font-size: 1.375rem;
+            font-weight: 700;
+            color: var(--primary);
+            font-family: var(--font-secondary);
+        }
+
+        .logo-subtitle {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        .nav-toggle {
+            display: none;
+            font-size: 1.5rem;
+            color: var(--primary);
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: var(--border-radius-sm);
+            transition: var(--transition);
+        }
+
+        .nav-toggle:hover {
+            background: var(--light);
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            position: relative;
+            padding: 0.75rem 0;
+            transition: var(--transition);
+            color: var(--primary) !important;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--secondary), var(--accent-gold));
+            transition: var(--transition);
+        }
+
+        .nav-link:hover {
+            color: var(--secondary) !important;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            margin-left: 1rem;
+        }
+
+        /* Header Phone */
+        .header-phone {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.125rem;
+            transition: var(--transition);
+            padding: 0.75rem 1rem;
+            border-radius: var(--border-radius);
+            background: linear-gradient(135deg, var(--accent-gold), #f6e05e);
+            box-shadow: var(--shadow);
+            border: 2px solid transparent;
+        }
+
+        .header-phone:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            background: linear-gradient(135deg, #f6e05e, var(--accent-gold));
+            color: var(--dark);
+        }
+
+        .header-phone i {
+            font-size: 1.25rem;
+            color: var(--primary);
+            transition: var(--transition);
+        }
+
+        .header-phone:hover i {
+            color: var(--dark);
+            animation: ring 1s ease-in-out;
+        }
+
+        .header-phone-text {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .header-phone-label {
+            font-size: 0.75rem;
+            color: var(--text-light);
+            font-weight: 500;
+            line-height: 1;
+        }
+
+        .header-phone-number {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1.2;
+            letter-spacing: 0.5px;
+        }
+
+        .header-phone:hover .header-phone-label {
+            color: var(--darker);
+        }
+
+        .header-phone:hover .header-phone-number {
+            color: var(--dark);
+        }
+
+        @keyframes ring {
+            0%, 20%, 50%, 80%, 100% {
+                transform: rotate(0deg);
+            }
+            10% {
+                transform: rotate(-10deg);
+            }
+            30% {
+                transform: rotate(10deg);
+            }
+            60% {
+                transform: rotate(-5deg);
+            }
+            90% {
+                transform: rotate(5deg);
+            }
+        }
+
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, 
+                rgba(26, 54, 93, 0.95) 0%, 
+                rgba(44, 90, 160, 0.95) 50%,
+                rgba(49, 130, 206, 0.95) 100%),
+                url('hero-bg.jpg') center/cover;
+            color: white;
+            padding: 10rem 0 4rem;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="0.5" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+            z-index: 1;
+        }
+
+        .page-header-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .page-header h1 {
+            color: white;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .page-header p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.125rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Contact Content */
+        .contact-content {
+            background: white;
+            padding: 4rem 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 3rem;
+            border-radius: var(--border-radius-xl);
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--secondary), var(--accent-gold));
+        }
+
+        .contact-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .contact-icon {
+            background: linear-gradient(135deg, var(--secondary), var(--primary-light));
+            color: white;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 2rem;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .contact-card h3 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            font-size: 1.75rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: rgba(49, 130, 206, 0.05);
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+        .contact-item:hover {
+            background: rgba(49, 130, 206, 0.1);
+        }
+
+        .contact-item i {
+            color: var(--secondary);
+            font-size: 1.25rem;
+            width: 24px;
+            flex-shrink: 0;
+        }
+
+        .contact-item-text {
+            flex: 1;
+            text-align: left;
+        }
+
+        .contact-item-label {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-item-value {
+            font-size: 1.125rem;
+            color: var(--text);
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .contact-item-value a {
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        .contact-item-value a:hover {
+            color: var(--secondary);
+        }
+
+        /* Free Consultation Section */
+        .consultation-section {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .consultation-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+            border-radius: 50%;
+            transform: translate(100px, -100px);
+        }
+
+        .consultation-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .consultation-section h2 {
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        .consultation-section p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+
+        .consultation-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .consultation-feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: var(--border-radius-lg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: var(--transition);
+        }
+
+        .consultation-feature:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .consultation-feature i {
+            font-size: 2.5rem;
+            color: var(--accent-gold);
+            margin-bottom: 1rem;
+        }
+
+        .consultation-feature h4 {
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .consultation-feature p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1rem;
+            margin: 0;
+        }
+
+
+        /* Footer */
+        .footer {
+            background: var(--darker);
+            color: white;
+            padding: 4rem 0 2rem;
+            position: relative;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-col h3 {
+            color: white;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.75rem;
+        }
+
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--accent-gold);
+            border-radius: 2px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer-links a:hover {
+            color: white;
+            padding-left: 0.5rem;
+        }
+
+        .footer-contact p {
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .footer-contact i {
+            color: var(--accent-gold);
+            width: 20px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: var(--secondary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: var(--transition);
+            z-index: 100;
+            opacity: 0;
+            visibility: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            :root {
+                --container-padding: 1.5rem;
+            }
+
+            .header-phone-text {
+                display: none;
+            }
+
+            .header-phone {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                justify-content: center;
+                padding: 0;
+            }
+
+            .header-phone i {
+                font-size: 1.375rem;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .consultation-features {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .section {
+                padding: 4rem 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-toggle {
+                display: block;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                align-items: stretch;
+                padding: 2rem;
+                box-shadow: var(--shadow-lg);
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition);
+                z-index: 100;
+            }
+
+            .nav-menu.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .nav-item {
+                margin: 0;
+                text-align: center;
+                padding: 0.75rem 0;
+                border-bottom: 1px solid var(--light);
+            }
+
+            .nav-cta {
+                margin: 1rem 0 0;
+            }
+
+            .page-header {
+                padding: 8rem 0 4rem;
+            }
+
+            .contact-card {
+                padding: 2rem;
+            }
+
+            .consultation-section {
+                padding: 3rem 0;
+            }
+
+            .consultation-feature {
+                padding: 1.5rem;
+            }
+
+            .logo-title {
+                font-size: 1.125rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            :root {
+                --container-padding: 1rem;
+            }
+
+            .header-phone {
+                width: 45px;
+                height: 45px;
+                font-size: 1rem;
+            }
+
+            .header-phone i {
+                font-size: 1.25rem;
+            }
+
+            .page-header {
+                padding: 7rem 0 3rem;
+            }
+
+            .contact-card {
+                padding: 1.5rem;
+            }
+
+            .contact-card h3 {
+                font-size: 1.5rem;
+            }
+
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: var(--transition-slow);
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <img src="logo-portrait.jpg.jpg" alt="齊藤代表" loading="lazy">
+                    <div class="logo-text">
+                        <span class="logo-title">中央労務管理協会</span>
+                        <span class="logo-title" style="font-size: 1.375rem;">齊藤社会保険労務士事務所</span>
+                    </div>
+                </a>
+                
+                <div class="header-center">
+                    <button class="nav-toggle" id="navToggle" aria-label="メニューを開く">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    
+                    <nav class="nav">
+                    <ul class="nav-menu" id="navMenu" role="menubar">
+                        <li class="nav-item" role="none">
+                            <a href="index.html#services" class="nav-link" role="menuitem">業務内容</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a href="index.html#features" class="nav-link" role="menuitem">選ばれる理由</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a href="access.html" class="nav-link" role="menuitem">アクセス</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a href="security.html" class="nav-link" role="menuitem">プライバシーポリシー</a>
+                        </li>
+                        <li class="nav-cta">
+                            <a href="contact.html" class="btn">お問い合わせ</a>
+                        </li>
+                    </ul>
+                    </nav>
+                </div>
+                
+                <div class="header-right">
+                    <!-- Header Phone -->
+                    <a href="tel:03-5615-8861" class="header-phone" aria-label="電話をかける">
+                        <i class="fas fa-phone"></i>
+                        <div class="header-phone-text">
+                            <span class="header-phone-label">お電話はこちら</span>
+                            <span class="header-phone-number">03-5615-8861</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" id="top">
+        <div class="container">
+            <div class="page-header-content">
+                <h1 style="font-size: 2.5rem;">お問い合わせ・無料相談</h1>
+                <p>人事労務に関するお悩みは何でもお気軽にご相談ください</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Phone Contact -->
+                <div class="contact-card animate-on-scroll">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>お電話でのお問い合わせ</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div class="contact-item-text">
+                                <div class="contact-item-label">電話番号</div>
+                                <div class="contact-item-value">
+                                    <a href="tel:03-5615-8861">03-5615-8861</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-fax"></i>
+                            <div class="contact-item-text">
+                                <div class="contact-item-label">FAX番号</div>
+                                <div class="contact-item-value">03-5615-8863</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="contact-item-text">
+                                <div class="contact-item-label">受付時間</div>
+                                <div class="contact-item-value">平日 9:00 - 18:00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Email Contact -->
+                <div class="contact-card animate-on-scroll">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>メールでのお問い合わせ</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-item-text">
+                                <div class="contact-item-label">メールアドレス</div>
+                                <div class="contact-item-value">
+                                    <a href="mailto:info@churokyo-sr.jp">info@churokyo-sr.jp</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-reply"></i>
+                            <div class="contact-item-text">
+                                <div class="contact-item-label">返信時間</div>
+                                <div class="contact-item-value">24時間以内にご返信</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-calendar-day"></i>
+                            <div class="contact-item-text">
+                                <div class="contact-item-label">営業日</div>
+                                <div class="contact-item-value">平日（土日祝日除く）</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="mailto:info@churokyo-sr.jp" class="btn btn-lg">
+                        <i class="fas fa-envelope"></i>
+                        メールを送る
+                    </a>
+                </div>
+
+                <!-- Office Visit -->
+                <div class="contact-card animate-on-scroll">
+                    <div class="contact-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>ご来所でのご相談</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-item-text">
+                                <div class="contact-item-label">所在地</div>
+                                <div class="contact-item-value">東京都文京区後楽2-1-11<br>飯田橋デルタビル６F</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-train"></i>
+                            <div class="contact-item-text">
+                                <div class="contact-item-label">アクセス</div>
+                                <div class="contact-item-value">飯田橋駅から徒歩3分</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-calendar-check"></i>
+                            <div class="contact-item-text">
+                                <div class="contact-item-label">予約</div>
+                                <div class="contact-item-value">事前予約制</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Consultation Section -->
+    <section class="consultation-section">
+        <div class="container">
+            <div class="consultation-content animate-on-scroll">
+                <div class="consultation-features">
+                    <div class="consultation-feature">
+                        <i class="fas fa-gift"></i>
+                        <h4>初回相談無料</h4>
+                        <p>まずはお気軽にご相談ください。費用は一切かかりません。</p>
+                    </div>
+                    <div class="consultation-feature">
+                        <i class="fas fa-clock"></i>
+                        <h4>迅速対応</h4>
+                        <p>お問い合わせには24時間以内にご返信いたします。</p>
+                    </div>
+                    <div class="consultation-feature">
+                        <i class="fas fa-user-tie"></i>
+                        <h4>専門家が対応</h4>
+                        <p>経験豊富な社会保険労務士が直接対応いたします。</p>
+                    </div>
+                    <div class="consultation-feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>秘密厳守</h4>
+                        <p>ご相談内容は法律により厳格に秘密保持されます。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop" aria-label="ページトップへ戻る">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <script>
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Navigation Toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        navToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            
+            // Toggle icon
+            const icon = navToggle.querySelector('i');
+            if (navMenu.classList.contains('active')) {
+                icon.className = 'fas fa-times';
+                navToggle.setAttribute('aria-label', 'メニューを閉じる');
+            } else {
+                icon.className = 'fas fa-bars';
+                navToggle.setAttribute('aria-label', 'メニューを開く');
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                const icon = navToggle.querySelector('i');
+                icon.className = 'fas fa-bars';
+                navToggle.setAttribute('aria-label', 'メニューを開く');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
+                navMenu.classList.remove('active');
+                const icon = navToggle.querySelector('i');
+                icon.className = 'fas fa-bars';
+                navToggle.setAttribute('aria-label', 'メニューを開く');
+            }
+        });
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerHeight = header.offsetHeight;
+                    const targetPosition = target.offsetTop - headerHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all elements with animate-on-scroll class
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Add stagger animation to service cards
+        const serviceCards = document.querySelectorAll('.contact-card');
+        serviceCards.forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.1}s`;
+        });
+
+        // Performance optimization: throttle scroll events
+        let ticking = false;
+        function updateOnScroll() {
+            // Header scroll effect
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+
+            // Back to top visibility
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                requestAnimationFrame(updateOnScroll);
+                ticking = true;
+            }
+        });
+
+        // Add keyboard navigation support
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                const icon = navToggle.querySelector('i');
+                icon.className = 'fas fa-bars';
+                navToggle.setAttribute('aria-label', 'メニューを開く');
+                navToggle.focus();
+            }
+        });
+
+        // Add focus management for accessibility
+        navToggle.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                this.click();
+            }
+        });
+
+        // Preload critical images
+        const criticalImages = [
+            'logo-portrait.jpg.jpg'
+        ];
+
+        criticalImages.forEach(src => {
+            const img = new Image();
+            img.src = src;
+        });
+    </script>
+</body>
+</html>
